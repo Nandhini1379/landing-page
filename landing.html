@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    
+    <style>
+        @media (min-width: 992px) {
+            body {
+
+                width: 99%;
+                height: auto;
+                border-radius: 8px;
+                background-color: #fff;
+                font-family: 'Dosis', sans-serif;
+            }
+
+            header {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                margin: 0px 40px !important;
+                padding: 10px 0px;
+                position: sticky;
+                background-color: #fff;
+                top: 0;
+            }
+
+            .nav-top-bar {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                vertical-align: center;
+            }
+
+            .nav-item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .logo {
+                display: flex;
+                flex-direction: column;
+                align-items: center !important;
+                justify-content: stretch;
+                vertical-align: middle !important;
+                width: 130px !important;
+
+
+            }
+
+            .menu-item {
+                color: lightgrey;
+                margin: 0px 20px !important;
+                cursor: pointer;
+                transition: .2s;
+            }
+
+            .menu-item:hover {
+                color: black;
+            }
+
+            .btn {
+                width: 140px !important;
+                background-color: black;
+                color: #fff;
+                border-radius: 15px;
+                padding: 15px;
+                border: none;
+                cursor: pointer;
+                font-family: 'Dosis', sans-serif;
+                transition: .2s;
+                outline: none;
+            }
+
+            .btn:hover {
+                background-color: rgb(31, 31, 31);
+            }
+
+            .btn.pink {
+                background-color: #ffe1f9;
+                color: #6a7cff;
+                margin-top: 5px;
+                padding: 8px;
+            }
+
+            .btn.pink:hover {
+                background-color: #ffc7f4;
+            }
+
+            .btn.blue {
+                background-color: #6a7cff;
+                color: #fff;
+            }
+
+            .btn.blue:hover {
+                background-color: #7f8dfd;
+            }
+
+            main {
+                background-image: url(https://i.ibb.co/JBhqNNC/landing-section.png);
+                background-size: 60% !important;
+                background-repeat: no-repeat;
+                background-position-x: right;
+                background-position: cover;
+                margin: 0px 20px 0px 160px;
+            }
+
+            .content {
+                margin: 50px 0px 0px 0px;
+                width: 40%;
+            }
+
+            h1 {
+                font-size: 86px !important;
+                line-height: 90px !important;
+                margin: 30px 0px 10px 0px !important;
+            }
+
+            p {
+                font-size: 20px !important;
+                color: lightgrey;
+                margin: 30px 0px 20px 0px !important;
+            }
+
+            .bottom-section {
+                width: 100%;
+                margin-top: 200px !important;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            i {
+                background-color: #fff;
+                color: black;
+                border-radius: 50px;
+                box-shadow: 1px 1px 8px lightgrey;
+                margin: 10px 6px;
+                padding: 10px !important;
+                cursor: pointer;
+                transition: .2s;
+            }
+
+            i:hover {
+                color: #fff;
+                background-color: #6a7cff;
+            }
+
+            .bottom-right {
+                margin: 8px 20px 0px 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: top;
+                justify-content: stretch;
+            }
+
+            #num {
+                margin: 5px 6px;
+            }
+
+            #num p {
+                color: #6a7cff;
+                font-size: 20px !important;
+            }
+
+            #bottom-text {
+                width: 60%;
+                margin: 5px 6px;
+            }
+
+            #bottom-text p {
+                color: black;
+                font-size: 20px !important;
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            body {
+                background-color: #fff;
+                font-family: 'Dosis', sans-serif;
+            }
+
+            header {
+                margin: 0px;
+            }
+
+            .nav-items {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                vertical-align: center;
+            }
+
+            .nav-menu {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .logo {
+
+                width: 100px;
+
+            }
+
+            .menu-item {
+                font-size: 18px;
+                color: lightgrey;
+                margin: 0px 5px;
+                cursor: pointer;
+                transition: .2s;
+            }
+
+            .menu-item:hover {
+                color: black;
+            }
+
+            .btn {
+                font-size: 18px;
+                width: 100px;
+                background-color: black;
+                color: #fff;
+                border-radius: 15px;
+                padding: 15px;
+                border: none;
+                cursor: pointer;
+                font-family: 'Dosis', sans-serif;
+                transition: .2s;
+                outline: none;
+            }
+
+            .btn:hover {
+                background-color: rgb(31, 31, 31);
+            }
+
+            .btn.pink {
+                background-color: #ffe1f9;
+                color: #6a7cff;
+                margin-top: 5px;
+                padding: 8px;
+            }
+
+            .btn.pink:hover {
+                background-color: #ffc7f4;
+            }
+
+            .btn.blue {
+                background-color: #6a7cff;
+                color: #fff;
+            }
+
+            .btn.blue:hover {
+                background-color: #7f8dfd;
+            }
+
+            main {
+                background-image: url(https://i.ibb.co/JBhqNNC/landing-section.png);
+                background-size: 70%;
+                background-repeat: no-repeat;
+                background-position-x: right;
+                background-position: cover;
+                margin: 0px;
+            }
+
+            .content {
+                margin: 50px 0px 0px 40px;
+                width: 40%;
+            }
+
+            h1 {
+                font-size: 76px;
+                line-height: 70px;
+                margin: 20px 0px 20px 0px;
+            }
+
+            p {
+                font-size: 18px;
+                color: lightgrey;
+                margin: 20px 0px 30px 0px;
+            }
+
+            .bottom-section {
+                width: 50%;
+                margin-top: 40px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            i {
+                background-color: #fff;
+                color: black;
+                border-radius: 50px;
+                box-shadow: 1px 1px 8px lightgrey;
+                margin: 10px 6px;
+                padding: 8px;
+                cursor: pointer;
+                transition: .2s;
+            }
+
+            i:hover {
+                color: #fff;
+                background-color: #6a7cff;
+            }
+
+            .bottom-right {
+                margin: 12px 20px 0px 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: top;
+                justify-content: stretch;
+            }
+
+            #num {
+                margin: 5px 6px;
+
+            }
+
+            #num p {
+
+                color: #6a7cff;
+                font-size: 18px !important;
+            }
+
+            #bottom-text {
+                width: 80%;
+                margin: 5px 6px;
+
+            }
+
+            #bottom-text p {
+
+                color: black;
+                font-size: 18px !important;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            body {
+                /* overflow: hidden; */
+                background-color: #fff;
+                font-family: 'Dosis', sans-serif;
+            }
+
+            header {
+                margin: 0px;
+                width: 600px;
+            }
+
+            .nav-items {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                vertical-align: center;
+            }
+
+            .nav-menu {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .logo {
+
+                width: 80px;
+
+            }
+
+            .menu-item {
+                font-size: 12px;
+                color: lightgrey;
+                margin: 0px 5px;
+                cursor: pointer;
+                transition: .2s;
+            }
+
+            .menu-item:hover {
+                color: black;
+            }
+
+            .btn {
+                font-size: 12px;
+                width: 85px;
+                background-color: black;
+                color: #fff;
+                border-radius: 15px;
+                padding: 15px;
+                border: none;
+                cursor: pointer;
+                font-family: 'Dosis', sans-serif;
+                transition: .2s;
+                outline: none;
+            }
+
+            .btn:hover {
+                background-color: rgb(31, 31, 31);
+            }
+
+            .btn.pink {
+                background-color: #ffe1f9;
+                color: #6a7cff;
+                margin-top: 5px;
+                padding: 8px;
+            }
+
+            .btn.pink:hover {
+                background-color: #ffc7f4;
+            }
+
+            .btn.blue {
+                background-color: #6a7cff;
+                color: #fff;
+            }
+
+            .btn.blue:hover {
+                background-color: #7f8dfd;
+            }
+
+            main {
+                background-image: url(https://i.ibb.co/JBhqNNC/landing-section.png);
+                background-size: 60%;
+                background-repeat: no-repeat;
+                background-position-x: right;
+                background-position: cover;
+                margin: 0px;
+            }
+
+            .content {
+                margin: 50px 0px 0px 40px;
+                width: 40%;
+            }
+
+            h1 {
+                font-size: 42px;
+                line-height: 50px;
+                margin: 10px 0px 10px 0px;
+            }
+
+            p {
+                font-size: 12px;
+                color: lightgrey;
+                margin: 10px 0px 20px 0px;
+            }
+
+            .bottom-section {
+                width: 50%;
+                margin-top: 40px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            i {
+                background-color: #fff;
+                color: black;
+                border-radius: 50px;
+                box-shadow: 1px 1px 8px lightgrey;
+                margin: 10px 6px;
+                padding: 6px;
+                cursor: pointer;
+                transition: .2s;
+            }
+
+            i:hover {
+                color: #fff;
+                background-color: #6a7cff;
+            }
+
+            .bottom-right {
+                margin: 12px 20px 0px 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: top;
+                justify-content: stretch;
+            }
+
+            #num {
+                margin: 5px 6px;
+
+            }
+
+            #num p {
+
+                color: #6a7cff;
+                font-size: 12px !important;
+            }
+
+            #bottom-text {
+                width: 80%;
+                margin: 5px 6px;
+
+            }
+
+            #bottom-text p {
+
+                color: black;
+                font-size: 12px !important;
+            }
+        }
+
+        @media (min-width: 600px) {
+
+            body {
+                /* overflow: hidden; */
+                background-color: #fff;
+                font-family: 'Dosis', sans-serif;
+            }
+
+            header {
+                margin: 0px;
+            }
+
+            .nav-items {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                vertical-align: center;
+            }
+
+            .nav-menu {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .logo {
+
+                width: 100px;
+
+            }
+
+            .menu-item {
+                font-size: 16px;
+                color: lightgrey;
+                margin: 0px 5px;
+                cursor: pointer;
+                transition: .2s;
+            }
+
+            .menu-item:hover {
+                color: black;
+            }
+
+            .btn {
+                font-size: 16px;
+                width: 100px;
+                background-color: black;
+                color: #fff;
+                border-radius: 15px;
+                padding: 15px;
+                border: none;
+                cursor: pointer;
+                font-family: 'Dosis', sans-serif;
+                transition: .2s;
+                outline: none;
+            }
+
+            .btn:hover {
+                background-color: rgb(31, 31, 31);
+            }
+
+            .btn.pink {
+                background-color: #ffe1f9;
+                color: #6a7cff;
+                margin-top: 10px;
+                padding: 8px;
+            }
+
+            .btn.pink:hover {
+                background-color: #ffc7f4;
+            }
+
+            .btn.blue {
+                background-color: #6a7cff;
+                color: #fff;
+            }
+
+            .btn.blue:hover {
+                background-color: #7f8dfd;
+            }
+
+            main {
+                background-image: url(https://i.ibb.co/JBhqNNC/landing-section.png);
+                background-size: 55%;
+                background-repeat: no-repeat;
+                background-position-x: right;
+                background-position: cover;
+                margin: 0px;
+            }
+
+            .content {
+                margin: 50px 0px 0px 60px;
+                width: 40%;
+            }
+
+            h1 {
+                font-size: 56px;
+                line-height: 55px;
+                margin: 20px 0px 20px 0px;
+            }
+
+            p {
+                font-size: 16px;
+                color: lightgrey;
+                margin: 20px 0px 30px 0px;
+            }
+
+            .bottom-section {
+                width: 50%;
+                margin-top: 50px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            i {
+                background-color: #fff;
+                color: black;
+                border-radius: 50px;
+                box-shadow: 1px 1px 8px lightgrey;
+                margin: 10px 6px;
+                padding: 7px;
+                cursor: pointer;
+                transition: .2s;
+            }
+
+            i:hover {
+                color: #fff;
+                background-color: #6a7cff;
+            }
+
+            .bottom-right {
+                margin: 12px 20px 0px 70px;
+                display: flex;
+                flex-direction: row;
+                align-items: top;
+                justify-content: stretch;
+            }
+
+            #num {
+                margin: 5px 6px;
+
+            }
+
+            #num p {
+
+                color: #6a7cff;
+                font-size: 16px !important;
+            }
+
+            #bottom-text {
+                width: 80%;
+                margin: 5px 6px;
+
+            }
+
+            #bottom-text p {
+
+                color: black;
+                font-size: 16px !important;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-top-bar">
+            <img class="logo" src="https://i.ibb.co/KNXmLfY/box-logo.png" alt="logo">
+            <div class="nav-items">
+                <div class="menu-item">Plans</div>
+                <div class="menu-item">Blog</div>
+                <div class="menu-item">Job</div>
+                <div class="menu-item">Features</div>
+            </div>
+            <div class="sign-in">
+                <button class="btn">Sign in</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <button class="btn pink">New Feature</button>
+            <h1>Create Your Custom Workspace.</h1>
+            <p>For each execution of a job.</p>
+            <button class="btn blue">Get Started</button><br>
+
+            <div class="bottom-section">
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-right"></i>
+                <div class="bottom-right">
+                    <div id="num">
+                        <p>01.</p>
+                    </div>
+                    <div id="bottom-text">
+                       <b> <p>Creative <br>
+                            Workspace Vol.2</p> </b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
